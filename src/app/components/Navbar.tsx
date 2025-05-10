@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   return (
@@ -21,7 +22,10 @@ const Navbar = () => {
           <Link href={"/about"}>About Us</Link>
           <Link href={"/contact"}>Contact</Link>
         </div>
-        <div></div>
+
+        <div className=" sm:hidden size-[50px] flex items-center justify-center p-0 m-0">
+          <GiHamburgerMenu  className='h-full w-full'/>
+        </div>
       </ul>
     </div>
   );
