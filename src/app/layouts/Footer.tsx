@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -9,12 +9,9 @@ const Footer = () => {
       <div className="bg-[#3e1a00] flex justify-around items-center flex-col md:flex-row sm:p-10 p-4">
         <div className="flex justify-evenly gap-5 flex-col">
           <h1 className="text-2xl md:text-5xl text-[#e8e0c3]">Contact</h1>
-          <a
-            href="https://www.gaavseghartak.com/"
-            className="text-xl md:text-2xl text-[#e8c8ae]"
-          >
-            www.gaavseghartak.com
-          </a>
+          <p className="text-xl md:text-2xl text-[#e8c8ae]">
+            gaavseghartak@gmail.com
+          </p>
           <p className="text-xl md:text-2xl text-[#e8c8ae]">+91 9301269119</p>
         </div>
         <div className="flex justify-evenly gap-5 flex-col pt-5 ">
@@ -65,6 +62,6 @@ const Footer = () => {
       <div className="bg-[#311001] min-h-[100px]"></div>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;
