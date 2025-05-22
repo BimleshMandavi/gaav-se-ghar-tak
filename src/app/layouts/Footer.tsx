@@ -32,7 +32,9 @@ const Footer = () => {
               <FaTwitter />
             </a>
 
-            <FaInstagram />
+            <a href="https://www.instagram.com/gaavseghartak_/?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D#">
+              <FaInstagram />
+            </a>
           </div>
         </div>
         <div className="flex justify-evenly gap-5 flex-col pt-5">
