@@ -1,6 +1,7 @@
-
+ "use client";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 
 const Shop = () => {
@@ -107,17 +108,23 @@ const Shop = () => {
         <div className="">
           <div className="flex flex-wrap justify-center items-center gap-10 p-5 ">
             {[...products].map((product, index) => (
-              <div
+              <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
                 className=" w-[300px] h-[400px] rounded-2x mb-20"
                 key={index}
               >
-                <Image
-                  src={product.img}
-                  width={300}
-                  height={300}
-                  alt={"Product 1"}
-                  className="rounded-t-xl"
-                />
+                {" "}
+                <motion.div whileHover={{ scale: 1.1 }}>
+                  <Image
+                    src={product.img}
+                    width={300}
+                    height={300}
+                    alt={"Product 1"}
+                    className="rounded-t-xl"
+                  />
+                </motion.div>
                 <h2 className="text-center text-[#a57420] text-4xl pt-2">
                   {product.title}
                 </h2>
@@ -129,7 +136,7 @@ const Shop = () => {
                     ADD TO CART
                   </button>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
