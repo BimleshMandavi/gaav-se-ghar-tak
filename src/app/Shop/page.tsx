@@ -131,11 +131,14 @@ const Shop = () => {
                 <p className="text-center  text-2xl pt-2 text-[#aa7b2d]">
                   ₹ {product.price}
                 </p>
-                <div className="flex justify-center items-center p-4 ">
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className="flex justify-center items-center p-4 "
+                >
                   <button className="bg-[#202008] text-[#a57420] text-2xl border-2 p-2 rounded-3xl cursor-pointer">
                     ADD TO CART
                   </button>
-                </div>
+                </motion.div>
               </motion.div>
             ))}
           </div>
