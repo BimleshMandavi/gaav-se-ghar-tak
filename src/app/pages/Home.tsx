@@ -35,7 +35,7 @@ const Home = () => {
 
   return (
     <div>
-      <div className="bg-[#bc8648] h-full w-full sm:flex justify-between items-center">
+      <div className="bg-[#aa7235] h-full w-full sm:flex justify-between items-center">
         <div className="text-[#311d00] sm:flex sm:justify-center items-center flex-col sm:w-[50%] text-start pl-10">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -86,7 +86,7 @@ const Home = () => {
                 <motion.div whileHover={{ scale: 1.1 }}>
                   <div>
                     <Image
-                      className="rounded-xl lg:size-80 mt-4 mb-4"
+                      className="rounded-3xl lg:size-80 mt-4 mb-4"
                       src={product.img}
                       alt={product.title}
                       height={300}
