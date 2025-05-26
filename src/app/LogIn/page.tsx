@@ -22,7 +22,7 @@ const page = () => {
           Log In
         </button>
         <p className="mt-4">
-          Don't have an account? <a href="/SignUp" className="text-blue-500">Sign Up</a>
+          Don&apos;t have an account? <a href="/SignUp" className="text-blue-500">Sign Up</a>
         </p>
       </form>
       <div className="bg-[#aa7235] h-[150px] flex justify-center items-center">

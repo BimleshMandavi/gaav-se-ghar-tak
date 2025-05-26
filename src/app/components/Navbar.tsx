@@ -32,7 +32,7 @@ const Navbar = () => {
             <motion.div whileHover={{ scale: 1.2 }}>
               <Link href={"/About"}>About Us</Link>
             </motion.div>
-            <SearchBox />
+            <SearchBox handleCToogle={() => { /* Add your toggle logic here */ }} />
           </div>
           <div className="hidden sm:flex justify-between items-center gap-5 w-[140px] text-xl md:text-2xl">
             <motion.div whileHover={{ scale: 1.2 }} className="cursor-pointer">
