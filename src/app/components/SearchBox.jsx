@@ -30,7 +30,7 @@ const SearchBox = ({ handleCToogle }) => {
             border: "1px solid transparent",
             background: "#aa7235",
             padding: "5px 5px 5px 9px",
-            width: "203px",
+            width: "253px",
             boxSizing: "border-box",
             marginLeft: "auto",
             marginTop: "6px",

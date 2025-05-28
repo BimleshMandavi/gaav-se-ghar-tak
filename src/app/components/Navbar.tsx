@@ -36,7 +36,7 @@ const Navbar = () => {
           </div>
           <div className="hidden sm:flex justify-between items-center gap-5 w-[140px] text-xl md:text-2xl">
             <motion.div whileHover={{ scale: 1.2 }} className="cursor-pointer">
-              <Link href={"/LogIn"}>Log In</Link>
+              <Link href={"/LogIn"}>Login</Link>
             </motion.div>
             <motion.div whileHover={{ scale: 1.2 }} className="cursor-pointer">
               <FaCartArrowDown />

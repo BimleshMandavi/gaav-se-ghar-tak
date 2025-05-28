@@ -1,38 +1,145 @@
-import React from 'react'
+// import "./SignUp.css";
+// import { SiJordan } from "react-icons/si";
+// import { SiNike } from "react-icons/si";
+import { Box, Typography, TextField } from "@mui/material";
 
-const page = () => {
+// import { useFormik } from "formik";
+// import { useDispatch } from "react-redux";
+// import { login } from "../../redux/slices/auth";
+// import toast from "react-hot-toast";
+
+const SignUp = () => {
+  // const dispatch = useDispatch();
+  // const navigate = useNavigate();
+  // const formik = useFormik({
+  //   initialValues: {
+  //     username: "",
+  //     password: "",
+  //   },
+  //   // onSubmit: async (values, action) => {
+  //   //   const { username, password } = values;
+  //   //   const data = { username, password };
+  //   //   let result = await dispatch(login(data));
+  //   //   if (result) {
+  //   //     localStorage.setItem("accessToken", result.token);
+  //   //     navigate("/");
+  //   //     toast.success("Login successful!");
+  //   //     action.resetForm();
+  //   //   } else {
+  //   //     toast.error("Incorrect username or password");
+  //   //   }
+  //   // },
+  // });
+  // const loginWithGoogle = () => {
+  //   window.open(`http://localhost:5003/auth/google`, "_self");
+  // };
+
   return (
-    <div>
-      Log In Page
-      <form className="flex flex-col items-center justify-center h-screen">
-        <input
-          type="text"
-          placeholder="Username"
-          className="mb-4 p-2 border border-gray-300 rounded"
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          className="mb-4 p-2 border border-gray-300 rounded"
-        />
-        <button
-          type="submit"
-          className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100vh",
+      }}
+      className="px-[50px] pt-6 flex-col mt-10 bg-[#aa7135]  text-black"
+    >
+      <form>
+        <Box
+          className="Main_box"
+          sx={{ width: { lg: "460px", md: "460px", sm: "460px", xs: "100%" } }}
         >
-          Log In
-        </button>
-        <p className="mt-4">
-          Don&apos;t have an account? <a href="/SignUp" className="text-blue-500">Sign Up</a>
-        </p>
-      </form>
-      <div className="bg-[#aa7235] h-[150px] flex justify-center items-center">
-        <h1 className="text-2xl sm:text-6xl font-bold text-[#351d0a]">
-          Welcome Back!
-        </h1>
-    </div>
-    </div>
- 
-  )
-}
+         
 
-export default page
+          <Box className="Headline">
+            <Typography variant="h5">
+              Enter your email to join us or sign in.
+            </Typography>
+          </Box>
+
+          <Box className="country" sx={{ margin: "16px 0" }}>
+            India <a href="">Change</a>
+          </Box>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <TextField
+              style={{ marginTop: "40px" }}
+              id="outlined-basic01"
+              name="username"
+              label="Username Or Email"
+              variant="outlined"
+              // onChange={formik.handleChange}
+              // onBlur={formik.handleBlur}
+              // value={formik.values.username}
+              required={true}
+            />
+            <TextField
+              style={{ marginTop: "40px" }}
+              id="outlined-basic02"
+              name="password"
+              label="Password"
+              type={"password"}
+              variant="outlined"
+              // onChange={formik.handleChange}
+              // onBlur={formik.handleBlur}
+              // value={formik.values.password}
+              required={true}
+            />
+          </div>
+
+          <Box className="terms_condition" sx={{ margin: "40px 0" }}>
+            By continuing, I agree to Nike’s <a href=""> Privacy Policy </a> and
+            <a href=""> Terms of Use.</a>
+          </Box>
+          <Box className="terms_condition" sx={{ margin: "16px 0" }}>
+            New member ? <a href="/SignUp">Sign up</a>
+          </Box>
+
+          <Box
+            className="continue"
+            sx={{
+              margin: "40px 0",
+              display: "flex",
+              flexDirection: {
+                lg: "row-reverse",
+                md: "row-reverse",
+                sm: "row-reverse",
+                xs: "column",
+              },
+            }}
+          >
+            <button
+              type="submit"
+              style={{
+                color: "#ffff",
+                padding: "15px",
+                backgroundColor: "black",
+                borderRadius: "30px",
+                width: "12rem",
+                cursor: "pointer",
+              }}
+            >
+              Sign In
+            </button>
+          </Box>
+        </Box>
+      </form>
+      <button
+        style={{
+          color: "#ffff",
+          padding: "10px",
+          backgroundColor: "#4853f2",
+          borderRadius: "25px",
+          width: "20rem",
+          cursor: "pointer",
+          boxShadow: "2px black",
+        }}
+        className="bg-black text-white w-[30em] h-[110px]"
+        // onClick={() => loginWithGoogle()}
+      >
+        Continue with Google
+      </button>
+    </div>
+  );
+};
+
+export default SignUp;
