@@ -121,7 +121,7 @@ const Shop = () => {
                     width={100}
                     height={100}
                     alt={"Product 1"}
-                    className="rounded-3xl w-full h-[130px] object-cover"
+                    className="rounded-3xl w-full h-[130px] sm:h-[300px] object-cover"
                     loading="lazy"
                   />
                 </motion.div>

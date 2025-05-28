@@ -16,11 +16,11 @@ const SearchBox = ({ handleCToogle }) => {
 
   return (
     <>
-      <div className="searchBar">
+      <div className="searchBar text-sm">
         <input
           type="text"
           id="searchInput"
-          placeholder="Search"
+          placeholder="Search for products, brands and more"
           onChange={(e) => setSearchTerm(e.target.value)}
           // onKeyPress={handleKeyPress}
           style={{
