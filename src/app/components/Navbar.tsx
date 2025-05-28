@@ -11,11 +11,11 @@ import { FaCartArrowDown } from "react-icons/fa";
 const Navbar = () => {
   return (
     <Headroom>
-      <div className="h-[120px] bg-[#d6aa73] text-black">
+      <div className="sm:h-[120px] h-[100px] bg-[#d6aa73] text-black pt-2">
         <ul className="flex  items-center justify-around">
           <Link href={"/"}>
             <Image
-              className="h-[120px] w-[120px]"
+              className="sm:h-[120px] sm:w-[120px] h-[80px] w-[80px] object-cover"
               src="/logo.jpeg"
               height={50}
               width={300}
