@@ -40,17 +40,15 @@ const SignUp = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "100vh",
+        height: "90vh",
       }}
-      className="px-[50px] pt-6 flex-col mt-10 bg-[#aa7135]  text-black"
+      className="px-[50px] flex-col  bg-[#aa7135]  text-black"
     >
       <form>
         <Box
-          className="Main_box"
+          className="Main_box bg-[#d6aa73] p-10 shadow-2xl rounded-2xl"
           sx={{ width: { lg: "460px", md: "460px", sm: "460px", xs: "100%" } }}
         >
-         
-
           <Box className="Headline">
             <Typography variant="h5">
               Enter your email to join us or sign in.
@@ -87,7 +85,7 @@ const SignUp = () => {
           </div>
 
           <Box className="terms_condition" sx={{ margin: "40px 0" }}>
-            By continuing, I agree to Nike’s <a href=""> Privacy Policy </a> and
+            By continuing, I agree to our <a href=""> Privacy Policy </a> and
             <a href=""> Terms of Use.</a>
           </Box>
           <Box className="terms_condition" sx={{ margin: "16px 0" }}>
@@ -123,7 +121,7 @@ const SignUp = () => {
           </Box>
         </Box>
       </form>
-      <button
+      {/* <button
         style={{
           color: "#ffff",
           padding: "10px",
@@ -137,7 +135,7 @@ const SignUp = () => {
         // onClick={() => loginWithGoogle()}
       >
         Continue with Google
-      </button>
+      </button> */}
     </div>
   );
 };

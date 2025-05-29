@@ -51,7 +51,7 @@ const Join = () => {
     >
       <form>
         <Box
-          className="Main_box"
+          className="Main_box bg-[#d6aa73] p-10 shadow-2xl rounded-2xl"
           sx={{ width: { lg: "460px", md: "460px", sm: "460px", xs: "100%" } }}
         >
           <Box className="Headline">
@@ -116,7 +116,7 @@ const Join = () => {
           </div>
 
           <Box className="terms_condition" sx={{ margin: "40px 0" }}>
-            By continuing, I agree to Nike’s <a href=""> Privacy Policy </a> and
+            By continuing, I agree to our <a href=""> Privacy Policy </a> and
             <a href=""> Terms of Use.</a>
           </Box>
           <Box className="terms_condition" sx={{ margin: "40px 0" }}>
@@ -152,7 +152,7 @@ const Join = () => {
           </Box>
         </Box>
       </form>
-      <button
+      {/* <button
         style={{
           color: "#ffff",
           padding: "15px",
@@ -166,7 +166,7 @@ const Join = () => {
         // onClick={() => loginWithGoogle()}
       >
         Continue with Google
-      </button>
+      </button> */}
     </div>
   );
 };
