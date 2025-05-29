@@ -135,7 +135,7 @@ const Shop = () => {
                   whileHover={{ scale: 1.1 }}
                   className="flex justify-center items-center sm:p-4 pt-2"
                 >
-                  <button className="bg-[#aa7235] text-black text-[10px] sm:text-xl font-bold border-2 p-2  cursor-pointer rounded-md">
+                  <button className="mt-4 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded cursor-pointer">
                     ADD TO CART
                   </button>
                 </motion.div>
