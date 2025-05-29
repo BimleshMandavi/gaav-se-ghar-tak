@@ -32,13 +32,14 @@ const Page = () => {
   const [cartItems, setCartItems] = useState(sampleCart);
 
   const handleQuantityChange = (id: number, delta: number) => {
-    const updatedItems = cartItems.map((item) =>
-      item.id === id
-        ? { ...item, quantity: Math.max(1, item.quantity + delta) }
-        : item
-    );
+    const updatedItems = cartItems
+      .map((item) =>
+        item.id === id ? { ...item, quantity: item.quantity + delta } : item
+      )
+      .filter((item) => item.quantity > 0); // Remove item if quantity is 0
     setCartItems(updatedItems);
   };
+  
 
   const total = cartItems.reduce(
     (acc, item) => acc + item.price * item.quantity,
@@ -71,6 +72,7 @@ const Page = () => {
                       height={100}
                       width={100}
                       className="w-24 h-24 object-cover rounded"
+                      loading="lazy"
                     />
                     <div className="ml-4 flex-1">
                       <h2 className="text-lg font-semibold">{item.name}</h2>

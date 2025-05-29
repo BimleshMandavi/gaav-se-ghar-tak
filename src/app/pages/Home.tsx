@@ -65,6 +65,7 @@ const Home = () => {
               height={80}
               width={300}
               alt={""}
+              loading="lazy"
             />
           </Link>
         </motion.div>
@@ -91,6 +92,7 @@ const Home = () => {
                       alt={product.title}
                       height={300}
                       width={300}
+                      loading="lazy"
                     />
                   </div>
                   <div className="pt-8">
