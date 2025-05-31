@@ -1,170 +1,94 @@
-// import "../auth/SignUp.css";
-// import { SiJordan } from "react-icons/si";
-// import { SiNike } from "react-icons/si";
-// import { useFormik } from "formik";
+"use client";
+
 import { Box, TextField, Typography } from "@mui/material";
-// import { Link, useNavigate } from "react-router-dom";
-// import { useDispatch } from "react-redux";
-// import { register } from "../../redux/slices/auth";
-// import toast from "react-hot-toast";
+import React from "react";
 
 const Join = () => {
-//   const dispatch = useDispatch();
-//   const navigate = useNavigate();
-//   const formik = useFormik({
-//     initialValues: {
-//       firstName: "",
-//       lastName: "",
-//       email: "",
-//       password: "",
-//     },
-//     onSubmit: async (values, action) => {
-//       const { firstName, lastName, email, password } = values;
-//       const data = { firstName, lastName, email, password };
-//       console.log("user data", data);
-//       let result = await dispatch(register(data));
-//       console.log(result);
-//       if (result) {
-//         navigate("/sign-in");
-//         toast.success("Registration Successful!");
-//         action.resetForm();
-//       } else {
-//         toast.error("Registration Failed!");
-//       }
-//     },
-//   });
-
-//   const loginWithGoogle = () => {
-//     window.open(`http://localhost:5003/auth/google`, "_self");
-//   };
-
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh",
-        padding: "50px 10px",
-      }}
-      className="px-[30px] flex-col  bg-[#aa7135]  text-black"
-    >
-      <form>
-        <Box
-          className="Main_box bg-[#d6aa73] p-10 shadow-2xl rounded-2xl"
-          sx={{ width: { lg: "460px", md: "460px", sm: "460px", xs: "100%" } }}
-        >
-          <Box className="Headline">
-            <Typography variant="h5">
+    <div className="flex justify-center items-center min-h-screen bg-[#aa7135] text-black px-4 sm:px-10">
+      <form className="w-full max-w-md">
+        <Box className="bg-[#d6aa73] p-6 sm:p-10 rounded-2xl shadow-2xl">
+          <Box>
+            <Typography
+              variant="h5"
+              className="text-lg sm:text-2xl font-semibold text-center"
+            >
               Enter your email to join us or sign up.
             </Typography>
           </Box>
 
-          <Box className="country" sx={{ margin: "16px 0" }}>
-            India <a href="">Change</a>
+          <Box className="text-sm text-center my-4">
+            India{" "}
+            <a href="#" className="underline">
+              Change
+            </a>
           </Box>
 
-          <div style={{ display: "flex", flexDirection: "column" }}>
+          <div className="flex flex-col gap-6">
             <TextField
-              style={{ marginTop: "40px" }}
-              id="outlined-basic1"
               label="First Name"
               name="firstName"
               variant="outlined"
-              //   onChange={formik.handleChange}
-              //   onBlur={formik.handleBlur}
-              //   value={formik.values.firstName}
-              required={true}
+              fullWidth
+              required
             />
             <TextField
-              style={{ marginTop: "40px" }}
-              id="outlined-basic1"
               label="Last Name"
               name="lastName"
               variant="outlined"
-              //   onChange={formik.handleChange}
-              //   onBlur={formik.handleBlur}
-              //   value={formik.values.lastName}
-              required={true}
+              fullWidth
+              required
             />
-
             <TextField
-              style={{ marginTop: "40px" }}
-              id="outlined-basic2"
               label="Email"
               name="email"
-              type={"email"}
-              required
+              type="email"
               variant="outlined"
-              //   onChange={formik.handleChange}
-              //   onBlur={formik.handleBlur}
-              //   value={formik.values.email}
+              fullWidth
+              required
             />
-
             <TextField
-              id="outlined-basic3"
               label="Password"
               name="password"
-              type={"password"}
-              required
+              type="password"
               variant="outlined"
-              style={{ marginTop: "40px" }}
-              //   onChange={formik.handleChange}
-              //   onBlur={formik.handleBlur}
-              //   value={formik.values.password}
+              fullWidth
+              required
             />
           </div>
 
-          <Box className="terms_condition" sx={{ margin: "40px 0" }}>
-            By continuing, I agree to our <a href=""> Privacy Policy </a> and
-            <a href=""> Terms of Use.</a>
-          </Box>
-          <Box className="terms_condition" sx={{ margin: "40px 0" }}>
-            Already signup? <a href="/LogIn">Log in</a>
+          <Box className="text-xs text-center mt-6">
+            By continuing, I agree to our{" "}
+            <a href="#" className="underline text-blue-500 mx-1">
+              Privacy Policy
+            </a>{" "}
+            and
+            <a href="#" className="underline ml-1 text-blue-500">
+              Terms of Use
+            </a>
+            .
           </Box>
 
-          <Box
-            className="continue"
-            sx={{
-              margin: "40px 0",
-              display: "flex",
-              flexDirection: {
-                lg: "row-reverse",
-                md: "row-reverse",
-                sm: "row-reverse",
-                xs: "column",
-              },
-            }}
-          >
+          <Box className="text-sm text-center mt-4">
+            Already signed up?{" "}
+            <a href="/LogIn" className="underline">
+              Log in
+            </a>
+          </Box>
+
+          <Box className="flex justify-center mt-6">
             <button
               type="submit"
-              style={{
-                color: "#ffff",
-                padding: "15px",
-                backgroundColor: "black",
-                borderRadius: "30px",
-                width: "12rem",
-                cursor: "pointer",
-              }}
+              className="bg-black text-white px-6 py-3 rounded-full w-full sm:w-48 hover:bg-gray-900 transition"
             >
               Sign Up
             </button>
           </Box>
         </Box>
       </form>
-      {/* <button
-        style={{
-          color: "#ffff",
-          padding: "15px",
-          backgroundColor: "#4853f2",
-          borderRadius: "25px",
-          width: "20rem",
-          cursor: "pointer",
-          boxShadow: "2px black",
-        }}
-        className="bg-black text-white w-[30em] h-[110px] "
-        // onClick={() => loginWithGoogle()}
-      >
+
+      {/* Google button (commented out) */}
+      {/* <button className="mt-6 bg-[#4853f2] text-white px-6 py-3 rounded-full w-full sm:w-[20rem]">
         Continue with Google
       </button> */}
     </div>

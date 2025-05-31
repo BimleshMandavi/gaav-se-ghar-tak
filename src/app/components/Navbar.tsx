@@ -4,10 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 import Headroom from "react-headroom";
-import { GiHamburgerMenu } from "react-icons/gi";
+// import { GiHamburgerMenu } from "react-icons/gi";
 import SearchBox from './SearchBox.jsx';
 import { FaCartArrowDown } from "react-icons/fa";
-
+import NavDrawer from "@/app/components/Nav-drawer";
 const Navbar = () => {
   return (
     <Headroom>
@@ -50,7 +50,8 @@ const Navbar = () => {
           </div>
 
           <div className=" sm:hidden size-[50px] flex items-center justify-center p-0 m-0">
-            <GiHamburgerMenu className="h-full w-full" />
+            {/* <GiHamburgerMenu className="h-full w-full" /> */}
+            <NavDrawer />
           </div>
         </ul>
       </div>

@@ -54,10 +54,10 @@ const Page = () => {
 
       <main className="min-h-screen bg-[#aa7135] p-6">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-3xl font-bold mb-6 text-center">Your Cart</h1>
+          <h1 className="text-3xl font-bold mb-6 text-center text-black">Your Cart</h1>
 
           {cartItems.length === 0 ? (
-            <p className="text-center text-gray-600">Your cart is empty.</p>
+            <p className="text-center text-red-800 text-5xl">Your cart is empty!</p>
           ) : (
             <>
               <div className="space-y-6">
