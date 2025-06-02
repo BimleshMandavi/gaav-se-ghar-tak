@@ -4,9 +4,9 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
-
+import { AiOutlineHome } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { IoMdHeartEmpty } from "react-icons/io";
+// import { IoMdHeartEmpty } from "react-icons/io";
 import AccordionGroup from "@mui/joy/AccordionGroup";
 import Accordion from "@mui/joy/Accordion";
 import AccordionDetails from "@mui/joy/AccordionDetails";
@@ -20,6 +20,7 @@ import { FiShoppingBag } from "react-icons/fi";
 import { PiStorefront } from "react-icons/pi";
 import { MdOutlineHelpOutline } from "react-icons/md";
 import { ImCross } from "react-icons/im";
+import Link from "next/link";
 
 //
 
@@ -157,7 +158,6 @@ export default function TemporaryDrawer() {
                   </AccordionSummary>
                   <AccordionDetails>
                     <div>
-                      
                       {/* <h1 className="text-2xl pt-3">{user.name}</h1> */}
 
                       <div
@@ -217,17 +217,18 @@ export default function TemporaryDrawer() {
                 </div>
               </div>
               <div className="pt-20">
-                <div className="flex justify-start center no-underline pb-4 cursor-pointer">
-                  <IoMdHeartEmpty />
-                  <div className="pl-4">Favourites</div>
-                </div>
-                <div
+                <Link className="flex justify-start center no-underline pb-4 cursor-pointer" href="/">
+                  <AiOutlineHome />
+                  <div className="pl-4">Home</div>
+                </Link>
+                <Link
                   className="flex  center no-underline pb-4 cursor-pointer"
                   //   onClick={handleTobag}
+                  href={"/Cart"}
                 >
                   <FaCartArrowDown />
                   <div className="pl-4">Cart</div>
-                </div>
+                </Link>
                 <div
                   //   onClick={handleToOrders}
                   className="flex no-underline pb-4 cursor-pointer"
@@ -240,14 +241,14 @@ export default function TemporaryDrawer() {
                   className="flex no-underline pb-4 cursor-pointer"
                 >
                   <PiStorefront />
-                  <div className="pl-4">Find Store</div>
+                  <div className="pl-4">Shop</div>
                 </div>
                 <div
                   //   onClick={handleToHelp}
                   className="flex no-underline pb-4 cursor-pointer"
                 >
                   <MdOutlineHelpOutline />
-                  <div className="pl-4">Help</div>
+                  <div className="pl-4">About Us</div>
                 </div>
               </div>
             </div>
