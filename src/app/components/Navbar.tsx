@@ -6,6 +6,7 @@ import React from 'react'
 import Headroom from "react-headroom";
 // import { GiHamburgerMenu } from "react-icons/gi";
 import SearchBox from './SearchBox.jsx';
+import SearchToggle from './SearchToggle.jsx';
 import { FaCartArrowDown } from "react-icons/fa";
 import NavDrawer from "@/app/components/Nav-drawer";
 const Navbar = () => {
@@ -48,9 +49,11 @@ const Navbar = () => {
               </a>
             </motion.div>
           </div>
+         
 
-          <div className=" sm:hidden size-[50px] flex items-center justify-center p-0 m-0">
+          <div className=" sm:hidden size-[50px] flex items-center gap-4 p-0 m-0">
             {/* <GiHamburgerMenu className="h-full w-full" /> */}
+            <SearchToggle />
             <NavDrawer />
           </div>
         </ul>

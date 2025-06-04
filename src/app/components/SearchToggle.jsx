@@ -30,7 +30,7 @@ export default function DrawerAnchor() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <Divider />
+      <Divider  />
     </Box>
   );
 
@@ -49,7 +49,8 @@ export default function DrawerAnchor() {
       </ButtonGroup>
       {["top"].map((anchor) => (
         <Drawer
-          className="h-[35px]"
+          // sx={{ height: "35vh" }}
+          // className="h-[35px]"
           key={anchor}
           anchor={anchor}
           open={state[anchor]}
