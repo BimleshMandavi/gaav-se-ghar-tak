@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const sampleCart = [
   {
@@ -29,6 +30,9 @@ const sampleCart = [
 ];
 
 const Page = () => {
+
+  const router = useRouter();
+
   const [cartItems, setCartItems] = useState(sampleCart);
 
   const handleQuantityChange = (id: number, delta: number) => {
@@ -40,6 +44,11 @@ const Page = () => {
     setCartItems(updatedItems);
   };
   
+
+  // const handleCheckout = () => {
+  //   // Here you would typically handle the checkout process, e.g., redirecting to a payment page
+  //   alert("Proceeding to checkout...");
+  // }
 
   const total = cartItems.reduce(
     (acc, item) => acc + item.price * item.quantity,
@@ -54,10 +63,14 @@ const Page = () => {
 
       <main className="min-h-screen bg-[#aa7135] p-6">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-3xl font-bold mb-6 text-center text-black">Your Cart</h1>
+          <h1 className="text-3xl font-bold mb-6 text-center text-black">
+            Your Cart
+          </h1>
 
           {cartItems.length === 0 ? (
-            <p className="text-center text-red-800 text-5xl">Your cart is empty!</p>
+            <p className="text-center text-red-800 text-5xl">
+              Your cart is empty!
+            </p>
           ) : (
             <>
               <div className="space-y-6">
@@ -104,7 +117,10 @@ const Page = () => {
 
               <div className="mt-8 text-right">
                 <h2 className="text-2xl font-semibold">Total: ₹{total}</h2>
-                <button className="mt-4 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded">
+                <button
+                  onClick={() => router.push("/Checkout")}
+                  className="mt-4 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded cursor-pointer "
+                >
                   Proceed to Checkout
                 </button>
               </div>
