@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.gaavseghartak.com
+
+# Sitemaps
+Sitemap: https://www.gaavseghartak.com/sitemap.xml

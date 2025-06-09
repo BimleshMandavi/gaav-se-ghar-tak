@@ -15,13 +15,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GaavSeGharTak",
-  description:
-    "At Gaav Se Ghar Tak, we believe that the true taste of India lies in its villages. From the sweetness of hand–picked mangoes to the juiciest of seasonal fruits – every product we deliver carries the soul of our villages.",
-  icons: {
-    icon: "/logo.png",
+  title: {
+    default: "GaavSeGharTak | Village-Fresh Products",
+    template: "%s | GaavSeGharTak",
   },
+  description:
+    "Shop organic and seasonal produce directly from Indian villages, delivered to your door.",
 };
+
 
 export default function RootLayout({
   children,
