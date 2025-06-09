@@ -21,6 +21,10 @@ export const metadata: Metadata = {
   },
   description:
     "Shop organic and seasonal produce directly from Indian villages, delivered to your door.",
+
+  icons: {
+    icon: "/logo.png",
+  },
 };
 
 
