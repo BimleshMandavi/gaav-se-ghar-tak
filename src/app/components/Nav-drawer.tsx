@@ -202,7 +202,7 @@ export default function TemporaryDrawer() {
                   <Navbar_3 />
                 </div> */}
 
-                <div className="flex pt-5 justify-center">
+                <div className="flex pt-8 justify-center">
                   <Box
                     sx={{
                       display: "flex",
@@ -216,13 +216,13 @@ export default function TemporaryDrawer() {
                   </Box>
                 </div>
               </div>
-              <div className="pt-20">
-                <Link className="flex justify-start center no-underline pb-4 cursor-pointer" href="/">
+              <div className="pt-20 text-2xl gap-2">
+                <Link className="flex justify-start center no-underline pb-6 cursor-pointer" href="/">
                   <AiOutlineHome />
                   <div className="pl-4">Home</div>
                 </Link>
                 <Link
-                  className="flex  center no-underline pb-4 cursor-pointer"
+                  className="flex  center no-underline pb-6 cursor-pointer"
                   //   onClick={handleTobag}
                   href={"/Cart"}
                 >
@@ -231,21 +231,21 @@ export default function TemporaryDrawer() {
                 </Link>
                 <div
                   //   onClick={handleToOrders}
-                  className="flex no-underline pb-4 cursor-pointer"
+                  className="flex no-underline pb-6 cursor-pointer"
                 >
                   <FiShoppingBag />
                   <div className="pl-4">Orders</div>
                 </div>
                 <div
                   //   onClick={handleToFindStore}
-                  className="flex no-underline pb-4 cursor-pointer"
+                  className="flex no-underline pb-6 cursor-pointer"
                 >
                   <PiStorefront />
                   <div className="pl-4">Shop</div>
                 </div>
                 <div
                   //   onClick={handleToHelp}
-                  className="flex no-underline pb-4 cursor-pointer"
+                  className="flex no-underline pb-6 cursor-pointer"
                 >
                   <MdOutlineHelpOutline />
                   <div className="pl-4">About Us</div>

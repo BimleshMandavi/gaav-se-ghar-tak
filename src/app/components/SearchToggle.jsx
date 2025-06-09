@@ -50,7 +50,7 @@ export default function DrawerAnchor() {
       {["top"].map((anchor) => (
         <Drawer
           // sx={{ height: "35vh" }}
-          // className="h-[35px]"
+          className="h-[35px]"
           key={anchor}
           anchor={anchor}
           open={state[anchor]}

@@ -80,7 +80,7 @@ const Home = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.8 }}
-            className="text-[#351d0a] p-5 flex  justify-evenly  items-center"
+            className="text-[#351d0a] p-5 flex   justify-evenly  items-center"
           >
             {[...products].map((product, index) => (
               <Link href={"/Shop"} key={index}>
