@@ -173,7 +173,7 @@ const Page = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#aa7035] text-black py-8">
+    <div className="min-h-screen bg-[#aa7035] text-black py-8 font-serif">
       <div className="max-w-6xl mx-auto px-4">
         <h1 className="text-3xl font-bold mb-8 ">My Addresses</h1>
 

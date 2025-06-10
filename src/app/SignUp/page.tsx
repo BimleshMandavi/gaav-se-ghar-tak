@@ -5,13 +5,13 @@ import React from "react";
 
 const Join = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[#aa7135] text-black px-4 sm:px-10">
-      <form className="w-full max-w-md">
+    <div className="flex justify-center items-center min-h-screen bg-[#aa7135] text-black font-serif px-4 sm:px-10">
+      <form className="w-full max-w-md font-serif">
         <Box className="bg-[#d6aa73] p-6 sm:p-10 rounded-2xl shadow-2xl">
           <Box>
             <Typography
               variant="h5"
-              className="text-lg sm:text-2xl font-semibold text-center"
+              className="text-lg sm:text-2xl font-semibold  text-center"
             >
               Enter your email to join us or sign up.
             </Typography>

@@ -38,7 +38,7 @@ const Shop = () => {
     <div className="h-full w-full m-0 p-0">
       <div className="bg-[#aa7235] h-[80px] sm:h-[150px] flex justify-center items-center">
         <div className="pt-10 pb-10">
-          <p className="text-black sm:text-2xl md:text-5xl text-center p-3">
+          <p className="text-black sm:text-2xl md:text-5xl text-center p-3 font-serif">
             OUR SHOP • PURE, FRESH & FROM THE VILLAGE
           </p>
         </div>
@@ -67,10 +67,10 @@ const Shop = () => {
                     loading="lazy"
                   />
                 </motion.div>
-                <h2 className="text-center text-black sm:text-4xl pt-2">
+                <h2 className="text-center text-black sm:text-4xl font-serif pt-2">
                   {product.title}
                 </h2>
-                <p className="text-center sm:text-2xl pt-2 text-black">
+                <p className="text-center sm:text-2xl pt-2  text-black">
                   ₹ {product.price}
                 </p>
                 <motion.div
@@ -87,7 +87,7 @@ const Shop = () => {
                       isInCart
                         ? "bg-blue-600 hover:bg-blue-700"
                         : "bg-green-600 hover:bg-green-700"
-                    } text-white sm:px-6 sm:py-2 rounded cursor-pointer`}
+                    } text-white font-serif sm:px-6 sm:py-2 rounded cursor-pointer`}
                   >
                     {isInCart ? "GO TO CART" : "ADD TO CART"}
                   </button>

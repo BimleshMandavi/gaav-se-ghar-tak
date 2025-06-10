@@ -5,12 +5,12 @@ import React from "react";
 
 const SignUp = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#aa7135] px-4 sm:px-10 text-black">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#aa7135] px-4 sm:px-10 text-black font-serif">
       <form className="w-full max-w-md">
         <Box className="bg-[#d6aa73] p-6 sm:p-10 rounded-2xl shadow-2xl">
           <Typography
             variant="h5"
-            className="text-lg sm:text-2xl font-semibold text-center"
+            className="text-lg sm:text-2xl font-semibold font-serif text-center"
           >
             Enter your email to join us or sign in.
           </Typography>

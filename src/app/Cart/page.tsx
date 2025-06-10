@@ -61,7 +61,7 @@ const Page = () => {
         <title>Your Cart | Gaav Se Ghar Tak</title>
       </Head>
 
-      <main className="min-h-screen bg-[#aa7135] p-6">
+      <main className="min-h-screen bg-[#aa7135] font-serif p-6">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-3xl font-bold mb-6 text-center text-black">
             Your Cart

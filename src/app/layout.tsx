@@ -3,6 +3,15 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./layouts/Footer";
+// import { PT_Serif } from "next/font/google";
+
+
+// const ptSerif = PT_Serif({
+//   subsets: ["latin"],
+//   weight: ["400", "700"],
+//   style: ["normal", "italic"],
+//   display: "swap",
+// });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable}  antialiased`}
       >
         <Navbar />
         {children}

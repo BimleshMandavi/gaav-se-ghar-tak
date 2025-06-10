@@ -12,7 +12,7 @@ import NavDrawer from "@/app/components/Nav-drawer";
 const Navbar = () => {
   return (
     <Headroom>
-      <div className="sm:h-[120px] h-[100px] bg-[#d6aa73] text-black pt-2 sm:pt-0">
+      <div className="sm:h-[120px] h-[100px] bg-[#d6aa73] text-black pt-2 sm:pt-0 font-serif">
         <ul className="flex  items-center justify-around">
           <Link href={"/"}>
             <Image
