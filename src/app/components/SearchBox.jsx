@@ -16,7 +16,7 @@ const SearchBox = ({ handleCToogle }) => {
 
   return (
     <>
-      <div className="searchBar text-sm">
+      <div className="searchBar text-sm font-serif">
         <input
           type="text"
           id="searchInput"

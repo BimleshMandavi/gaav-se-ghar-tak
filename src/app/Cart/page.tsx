@@ -58,17 +58,19 @@ const Page = () => {
   return (
     <div>
       <Head>
-        <title>Your Cart | Gaav Se Ghar Tak</title>
+        <title className="font-serif font-normal">
+          Your Cart | Gaav Se Ghar Tak
+        </title>
       </Head>
 
-      <main className="min-h-screen bg-[#aa7135] font-serif p-6">
+      <main className="min-h-screen bg-[#aa7135]  p-6">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-3xl font-bold mb-6 text-center text-black">
+          <h1 className="text-3xl font-bold font-serif mb-6 text-center text-black">
             Your Cart
           </h1>
 
           {cartItems.length === 0 ? (
-            <p className="text-center text-red-800 text-5xl">
+            <p className="text-center text-red-800 font-serif text-5xl">
               Your cart is empty!
             </p>
           ) : (
@@ -88,7 +90,9 @@ const Page = () => {
                       loading="lazy"
                     />
                     <div className="ml-4 flex-1">
-                      <h2 className="text-lg font-semibold">{item.name}</h2>
+                      <h2 className="text-lg font-semibold font-serif">
+                        {item.name}
+                      </h2>
                       <p className="text-sm text-gray-600">
                         ₹{item.price} per unit
                       </p>
@@ -116,10 +120,12 @@ const Page = () => {
               </div>
 
               <div className="mt-8 text-right">
-                <h2 className="text-2xl font-semibold">Total: ₹{total}</h2>
+                <h2 className="text-2xl font-semibold">
+                  <span className="font-serif">Total:</span> ₹ {total}
+                </h2>
                 <button
                   onClick={() => router.push("/Checkout")}
-                  className="mt-4 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded cursor-pointer "
+                  className="mt-4 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded cursor-pointer font-serif"
                 >
                   Proceed to Checkout
                 </button>

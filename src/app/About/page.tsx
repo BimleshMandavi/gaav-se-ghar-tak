@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const page = () => {
   return (
-    <div>
+    <div className="font-serif">
       <Head>
         <title>About Us | Gaav Se Ghar Tak</title>
         <meta
