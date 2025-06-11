@@ -44,9 +44,9 @@ const Navbar = () => {
               <Link href={"/LogIn"}>Login</Link>
             </motion.div>
             <motion.div whileHover={{ scale: 1.2 }} className="cursor-pointer">
-              <a href="/Cart">
+              <Link href="/Cart">
                 <FaCartArrowDown />
-              </a>
+              </Link>
             </motion.div>
           </div>
          

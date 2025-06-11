@@ -562,7 +562,7 @@ const Page = () => {
                       )}
 
                       <div className="flex items-start mb-2">
-                        <span className="inline-block w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-2">
+                        <span className=" w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center mr-2">
                           {address.addressType === "home" ? "H" : "W"}
                         </span>
                         <span className="font-medium">

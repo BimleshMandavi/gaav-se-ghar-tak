@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "Shop organic and seasonal produce directly from Indian villages, delivered to your door.",
 
   icons: {
-    icon: "/logo.png",
+    icon: "/logo-06.png",
   },
 };
 
