@@ -92,7 +92,7 @@ const Home = () => {
                       alt={product.title}
                       height={300}
                       width={300}
-                      loading="lazy"
+                      loading="lazy" 
                     />
                   </div>
                   <div className="pt-8">
