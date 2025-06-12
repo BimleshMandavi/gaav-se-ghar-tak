@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./layouts/Footer";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 // import { PT_Serif } from "next/font/google";
 
 
@@ -48,6 +50,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable}  antialiased`}
       >
         <Navbar />
+        <Analytics />
+        <SpeedInsights />
         {children}
         <Footer />
       </body>
