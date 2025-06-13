@@ -6,26 +6,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Product_Slider from "../components/Product_Slider";
 
 const Home = () => {
-  const products = [
-    {
-      title: "Mangoes",
-      img: "/pic-02.png",
-    },
-    {
-      title: "Seasonal Fruits",
-      img: "/pic-03.png",
-    },
-    {
-      title: "Pickles",
-      img: "/pic-04.png",
-    },
-    {
-      title: "Snacks",
-      img: "/pic-05.png",
-    },
-  ];
+  
 
   //  const itemVariants = {
   //    hidden: { opacity: 0, scale: 0.8 },
@@ -75,35 +59,7 @@ const Home = () => {
           <h1 className="text-2xl sm:text-6xl font-normal font-serif text-[#351d0a] text-center pt-10 ">
             Product Categories
           </h1>
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.8 }}
-            className="text-[#351d0a] p-5 flex   justify-evenly  items-center"
-          >
-            {[...products].map((product, index) => (
-              <Link href={"/Shop"} key={index}>
-                <motion.div whileHover={{ scale: 1.1 }}>
-                  <div>
-                    <Image
-                      className="rounded-3xl lg:size-80 mt-4 mb-4"
-                      src={product.img}
-                      alt={product.title}
-                      height={300}
-                      width={300}
-                      loading="lazy" 
-                    />
-                  </div>
-                  <div className="pt-8">
-                    <p className="text-xl md:text-5xl  font-normal font-serif text-center ">
-                      {product.title}
-                    </p>
-                  </div>
-                </motion.div>
-              </Link>
-            ))}
-          </motion.div>
+          <Product_Slider />
         </div>
       </div>
     </div>
